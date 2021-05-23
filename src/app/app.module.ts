@@ -13,6 +13,7 @@ import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
 import { OutputAsciiComponent } from './output-ascii/output-ascii.component';
 import { OutputBinaryComponent } from './output-binary/output-binary.component';
+import { OutputHexComponent } from './output-hex/output-hex.component';
 
 
 
@@ -21,7 +22,8 @@ import { OutputBinaryComponent } from './output-binary/output-binary.component';
     AppComponent,
     InputComponent,
     OutputAsciiComponent,
-    OutputBinaryComponent
+    OutputBinaryComponent,
+    OutputHexComponent
   ],
   imports: [
     BrowserModule,
