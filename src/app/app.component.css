@@ -1,7 +1,44 @@
-.container{
+/* .container{
     max-width: 800px;
 }
 .textArea{
     width: 300px; 
     height: 200px;
+} */
+
+
+.heading-section{
+    background: linear-gradient(to right, #089476, #00d4ff);
+    /* padding: 70px; */
 }
+/* .button-home{
+    position: absolute;
+
+}
+.button-accent{
+    position: absolute;
+    left: 15%
+} */
+.title{
+    font-weight: lighter bold;
+    font-size: xx-large;
+    color: white;
+}
+
+/* .example-action-buttons {
+    padding-bottom: 20px;
+  }
+  
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+    flex-basis: 0;
+}
+  
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.example-headers-align .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+} */

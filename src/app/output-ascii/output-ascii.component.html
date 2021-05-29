@@ -1,2 +1,8 @@
-<h3>To ASCII</h3>
-<textarea [(ngModel)]="mensaje" disabled></textarea>
+<div class="row">
+    <div class="col">
+        <mat-form-field class="w-100">
+        <h3>ASCII</h3>
+        <textarea matInput (input)="cambioTexto($event.target.value)" [(ngModel)]="mensaje" class="textArea"></textarea>
+        </mat-form-field>
+    </div>
+</div>

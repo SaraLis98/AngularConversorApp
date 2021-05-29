@@ -1,27 +1,26 @@
-
-<section class="heading-section">
-  <h1 class="title text-center">Conversor App</h1>
-</section>
-
-<div class="container">
+<div class="mt-4 mx-5">
   <mat-card class="example-card">
-    <mat-card-header>
-      <div mat-card-avatar class="example-header-image"></div>
-      <mat-card-title>Shiba Inu</mat-card-title>
-      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    </mat-card-header>
     <mat-card-content>
-      <mat-form-field class="example-full-width">
-        <mat-label>Leave a comment</mat-label>
-        <textarea matInput (input)="cambioTexto($event.target.value)" [(ngModel)]="mensaje" class="textArea"></textarea>
-      </mat-form-field>
-      <app-output-binary></app-output-binary>
-      <app-output-ascii></app-output-ascii>
-      <app-output-hex></app-output-hex>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="w-100">
+            <h3>Text</h3>
+            <textarea matInput (input)="cambioTexto($event.target.value)" [(ngModel)]="mensaje" class="textArea"></textarea>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
     </mat-card-content>
-    <mat-card-actions>
-    </mat-card-actions>
   </mat-card>
 </div>
 
-
+<div class="card mt-4 mx-5">
+  <div class="card-header bg-accent">
+    {{ comunicationService.conversorDescriptionTitle }}
+  </div>
+  <div class="card-body">
+    <p>{{ comunicationService.conversorDescription }}</p>
+  </div>
+</div>
