@@ -18,9 +18,9 @@ export class InputComponent implements OnInit {
       this.mensaje = '';
 
       if(mensaje.tipo == TipoMensaje.ascii){
-        for(let i = 0; i<mensaje.text.length; i++){
-          this.mensaje += String.fromCharCode(mensaje.text.charCodeAt(i));
-        }
+        this.mensaje = mensaje.text.split(/\s/).map(function (val){
+          return String.fromCharCode(parseInt(val));
+        }).join("");
       }
 
       if(mensaje.tipo == TipoMensaje.hex){
