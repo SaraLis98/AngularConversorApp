@@ -12,8 +12,8 @@ export class OutputHexComponent implements OnInit {
   constructor(private comunicationService: ComunicationService) { }
 
   ngOnInit(): void {
-    this.comunicationService.conversorDescriptionTitle = "HOLA";
-    this.comunicationService.conversorDescription = "hola";
+    this.comunicationService.conversorDescriptionTitle = "¿Qué es el sistema hexadecimal?";
+    this.comunicationService.conversorDescription = "El sistema hexadecimal (abreviado hex.) es el sistema de numeración posicional que tiene como base el 16. Es un sistema numérico que usa 16 símbolos. Estos símbolos incluyen 0-9 y A-F ó a-f. Un ejemplo de número hexadecimal es '736f6c'. Las aplicaciones informáticas pueden utilizar hexadecimal para codificación binaria en informática y electrónica digital.";
 
     this.comunicationService.enviarMensajeSubjectObservable.subscribe( mensaje => {
       // Solo se convierte cuando se actualice el mensaje desde el input de texto normal

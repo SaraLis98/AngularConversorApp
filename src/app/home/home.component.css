@@ -1,0 +1,12 @@
+.desc-home{
+    font-family: Verdana;
+}
+
+.mat-raised-button{
+    background-color:  #038c9ead;
+    color: white;
+    font-weight: 450;
+}
+.mat-raised-button:hover{
+    background-color:  #ee5f8f;
+}

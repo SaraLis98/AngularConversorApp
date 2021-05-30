@@ -30,9 +30,9 @@ export class InputComponent implements OnInit {
       }
 
       if(mensaje.tipo == TipoMensaje.bin){
-          this.mensaje = mensaje.text.split(/\s/).map(function (val){
-              return String.fromCharCode(parseInt(val, 2));
-            }).join("");
+        this.mensaje = mensaje.text.split(/\s/).map(function (val){
+          return String.fromCharCode(parseInt(val, 2));
+        }).join("");
       }
     });
   }

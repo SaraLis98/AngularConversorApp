@@ -12,9 +12,8 @@ export class OutputBinaryComponent implements OnInit {
   constructor(private comunicationService: ComunicationService) { }
 
   ngOnInit(): void {
-    this.comunicationService.conversorDescriptionTitle = "HOLA";
-    this.comunicationService.conversorDescription = "hola";
-
+    this.comunicationService.conversorDescriptionTitle = "¿Qué es el código binario?";
+    this.comunicationService.conversorDescription = "El código binario es el sistema de codificación usado para la representación de textos, o procesadores de instrucciones de computadora, utilizando el sistema binario (sistema numérico de dos dígitos, o bit: el '0' y el '1'). En informática y telecomunicaciones, el código binario se utiliza en la codificación de datos, tales como cadenas de caracteres, o cadenas de bits.";
     this.comunicationService.enviarMensajeSubjectObservable.subscribe( mensaje => {
       // Solo se convierte cuando se actualice el mensaje desde el input de texto normal
       if(mensaje.tipo == TipoMensaje.text){
